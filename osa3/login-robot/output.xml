@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.13.9 on win32)" generated="20251116 19:13:12.006" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.13.9 on win32)" generated="20251116 20:34:59.787" rpa="false" schemaversion="4">
 <suite id="s1" name="Tests" source="C:\Users\luukk\Documents\ohjelmistotuotanto\uusirepo\osa3\login-robot\src\tests">
 <suite id="s1-s1" name="Login" source="C:\Users\luukk\Documents\ohjelmistotuotanto\uusirepo\osa3\login-robot\src\tests\login.robot">
 <test id="s1-s1-t1" name="Login With Correct Credentials" line="6">
@@ -7,128 +7,204 @@
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20251116 19:13:12.039" endtime="20251116 19:13:12.039"/>
+<msg timestamp="20251116 20:34:59.830" level="FAIL">AttributeError: 'UserService' object has no attribute '_io'</msg>
+<status status="FAIL" starttime="20251116 20:34:59.829" endtime="20251116 20:34:59.830"/>
 </kw>
 <kw name="Input Login Command" library="resource">
-<kw name="Input" library="AppLibrary">
-<arg>login</arg>
-<status status="PASS" starttime="20251116 19:13:12.039" endtime="20251116 19:13:12.039"/>
+<status status="NOT RUN" starttime="20251116 20:34:59.830" endtime="20251116 20:34:59.830"/>
 </kw>
-<status status="PASS" starttime="20251116 19:13:12.039" endtime="20251116 19:13:12.039"/>
+<status status="FAIL" starttime="20251116 20:34:59.829" endtime="20251116 20:34:59.830"/>
 </kw>
-<status status="PASS" starttime="20251116 19:13:12.039" endtime="20251116 19:13:12.039"/>
-</kw>
-<kw name="Input Credentials" library="resource">
-<arg>kalle</arg>
-<arg>kalle123</arg>
-<kw name="Input" library="AppLibrary">
-<arg>${username}</arg>
-<status status="PASS" starttime="20251116 19:13:12.040" endtime="20251116 19:13:12.040"/>
-</kw>
-<kw name="Input" library="AppLibrary">
-<arg>${password}</arg>
-<status status="PASS" starttime="20251116 19:13:12.040" endtime="20251116 19:13:12.040"/>
-</kw>
-<kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20251116 19:13:12.040" endtime="20251116 19:13:12.040"/>
-</kw>
-<status status="PASS" starttime="20251116 19:13:12.039" endtime="20251116 19:13:12.040"/>
-</kw>
-<kw name="Output Should Contain" library="AppLibrary">
-<arg>Logged in</arg>
-<status status="PASS" starttime="20251116 19:13:12.040" endtime="20251116 19:13:12.040"/>
-</kw>
-<status status="PASS" starttime="20251116 19:13:12.038" endtime="20251116 19:13:12.040"/>
+<status status="FAIL" starttime="20251116 20:34:59.829" endtime="20251116 20:34:59.831">Setup failed:
+AttributeError: 'UserService' object has no attribute '_io'</status>
 </test>
 <test id="s1-s1-t2" name="Login With Incorrect Password" line="10">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20251116 19:13:12.042" endtime="20251116 19:13:12.042"/>
+<msg timestamp="20251116 20:34:59.833" level="FAIL">AttributeError: 'UserService' object has no attribute '_io'</msg>
+<status status="FAIL" starttime="20251116 20:34:59.832" endtime="20251116 20:34:59.833"/>
 </kw>
 <kw name="Input Login Command" library="resource">
-<kw name="Input" library="AppLibrary">
-<arg>login</arg>
-<status status="PASS" starttime="20251116 19:13:12.042" endtime="20251116 19:13:12.042"/>
+<status status="NOT RUN" starttime="20251116 20:34:59.833" endtime="20251116 20:34:59.833"/>
 </kw>
-<status status="PASS" starttime="20251116 19:13:12.042" endtime="20251116 19:13:12.042"/>
+<status status="FAIL" starttime="20251116 20:34:59.832" endtime="20251116 20:34:59.833"/>
 </kw>
-<status status="PASS" starttime="20251116 19:13:12.042" endtime="20251116 19:13:12.042"/>
-</kw>
-<kw name="Input Credentials" library="resource">
-<arg>kalle</arg>
-<arg>kalle456</arg>
-<kw name="Input" library="AppLibrary">
-<arg>${username}</arg>
-<status status="PASS" starttime="20251116 19:13:12.042" endtime="20251116 19:13:12.042"/>
-</kw>
-<kw name="Input" library="AppLibrary">
-<arg>${password}</arg>
-<status status="PASS" starttime="20251116 19:13:12.042" endtime="20251116 19:13:12.042"/>
-</kw>
-<kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20251116 19:13:12.043" endtime="20251116 19:13:12.043"/>
-</kw>
-<status status="PASS" starttime="20251116 19:13:12.042" endtime="20251116 19:13:12.043"/>
-</kw>
-<kw name="Output Should Contain" library="AppLibrary">
-<arg>Invalid username or password</arg>
-<status status="PASS" starttime="20251116 19:13:12.043" endtime="20251116 19:13:12.043"/>
-</kw>
-<status status="PASS" starttime="20251116 19:13:12.041" endtime="20251116 19:13:12.043"/>
+<status status="FAIL" starttime="20251116 20:34:59.832" endtime="20251116 20:34:59.833">Setup failed:
+AttributeError: 'UserService' object has no attribute '_io'</status>
 </test>
 <test id="s1-s1-t3" name="Login With Nonexistent Username" line="14">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20251116 19:13:12.044" endtime="20251116 19:13:12.045"/>
+<msg timestamp="20251116 20:34:59.835" level="FAIL">AttributeError: 'UserService' object has no attribute '_io'</msg>
+<status status="FAIL" starttime="20251116 20:34:59.835" endtime="20251116 20:34:59.835"/>
 </kw>
 <kw name="Input Login Command" library="resource">
+<status status="NOT RUN" starttime="20251116 20:34:59.835" endtime="20251116 20:34:59.835"/>
+</kw>
+<status status="FAIL" starttime="20251116 20:34:59.835" endtime="20251116 20:34:59.835"/>
+</kw>
+<status status="FAIL" starttime="20251116 20:34:59.834" endtime="20251116 20:34:59.836">Setup failed:
+AttributeError: 'UserService' object has no attribute '_io'</status>
+</test>
+<status status="FAIL" starttime="20251116 20:34:59.810" endtime="20251116 20:34:59.837"/>
+</suite>
+<suite id="s1-s2" name="Register" source="C:\Users\luukk\Documents\ohjelmistotuotanto\uusirepo\osa3\login-robot\src\tests\register.robot">
+<test id="s1-s2-t1" name="Register With Valid Username And Password" line="6">
+<kw name="Input New Commando" type="SETUP">
+<kw name="Input New Command" library="resource">
 <kw name="Input" library="AppLibrary">
-<arg>login</arg>
-<status status="PASS" starttime="20251116 19:13:12.045" endtime="20251116 19:13:12.045"/>
-</kw>
-<status status="PASS" starttime="20251116 19:13:12.045" endtime="20251116 19:13:12.045"/>
-</kw>
-<status status="PASS" starttime="20251116 19:13:12.044" endtime="20251116 19:13:12.045"/>
-</kw>
-<kw name="Input Credentials" library="resource">
-<arg>kallenen</arg>
-<arg>kalle123</arg>
-<kw name="Input" library="AppLibrary">
-<arg>${username}</arg>
-<status status="PASS" starttime="20251116 19:13:12.045" endtime="20251116 19:13:12.045"/>
-</kw>
-<kw name="Input" library="AppLibrary">
-<arg>${password}</arg>
-<status status="PASS" starttime="20251116 19:13:12.045" endtime="20251116 19:13:12.045"/>
+<arg>new</arg>
+<status status="PASS" starttime="20251116 20:34:59.841" endtime="20251116 20:34:59.841"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20251116 19:13:12.046" endtime="20251116 19:13:12.046"/>
+<status status="PASS" starttime="20251116 20:34:59.841" endtime="20251116 20:34:59.841"/>
 </kw>
-<status status="PASS" starttime="20251116 19:13:12.045" endtime="20251116 19:13:12.046"/>
+<status status="PASS" starttime="20251116 20:34:59.841" endtime="20251116 20:34:59.841"/>
+</kw>
+<status status="PASS" starttime="20251116 20:34:59.840" endtime="20251116 20:34:59.841"/>
+</kw>
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<msg timestamp="20251116 20:34:59.841" level="FAIL">AttributeError: 'UserService' object has no attribute '_io'</msg>
+<status status="FAIL" starttime="20251116 20:34:59.841" endtime="20251116 20:34:59.842"/>
+</kw>
+<kw name="Input Login Command" library="resource">
+<status status="NOT RUN" starttime="20251116 20:34:59.842" endtime="20251116 20:34:59.842"/>
+</kw>
+<kw name="Input Credentials" library="resource">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="NOT RUN" starttime="20251116 20:34:59.842" endtime="20251116 20:34:59.842"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
-<arg>Invalid username or password</arg>
-<status status="PASS" starttime="20251116 19:13:12.046" endtime="20251116 19:13:12.046"/>
+<arg>Logged in</arg>
+<status status="NOT RUN" starttime="20251116 20:34:59.842" endtime="20251116 20:34:59.842"/>
 </kw>
-<status status="PASS" starttime="20251116 19:13:12.044" endtime="20251116 19:13:12.046"/>
+<status status="FAIL" starttime="20251116 20:34:59.840" endtime="20251116 20:34:59.843">AttributeError: 'UserService' object has no attribute '_io'</status>
 </test>
-<status status="PASS" starttime="20251116 19:13:12.030" endtime="20251116 19:13:12.047"/>
+<test id="s1-s2-t2" name="Register With Too Short Username And Valid Password" line="15">
+<kw name="Input New Commando" type="SETUP">
+<kw name="Input New Command" library="resource">
+<kw name="Input" library="AppLibrary">
+<arg>new</arg>
+<status status="PASS" starttime="20251116 20:34:59.845" endtime="20251116 20:34:59.846"/>
+</kw>
+<kw name="Run Application" library="AppLibrary">
+<status status="PASS" starttime="20251116 20:34:59.846" endtime="20251116 20:34:59.846"/>
+</kw>
+<status status="PASS" starttime="20251116 20:34:59.845" endtime="20251116 20:34:59.846"/>
+</kw>
+<status status="PASS" starttime="20251116 20:34:59.845" endtime="20251116 20:34:59.846"/>
+</kw>
+<kw name="Create User" library="AppLibrary">
+<arg>ka</arg>
+<arg>kalle123</arg>
+<msg timestamp="20251116 20:34:59.846" level="FAIL">AttributeError: 'UserService' object has no attribute '_io'</msg>
+<status status="FAIL" starttime="20251116 20:34:59.846" endtime="20251116 20:34:59.847"/>
+</kw>
+<kw name="Output Should Contain" library="AppLibrary">
+<arg>Käyttäjätunnuksen pituus on oltava vähintään 3 merkkiä.</arg>
+<status status="NOT RUN" starttime="20251116 20:34:59.847" endtime="20251116 20:34:59.847"/>
+</kw>
+<status status="FAIL" starttime="20251116 20:34:59.844" endtime="20251116 20:34:59.847">AttributeError: 'UserService' object has no attribute '_io'</status>
+</test>
+<test id="s1-s2-t3" name="Register With Enough Long But Invalid Username And Valid Password" line="19">
+<kw name="Input New Commando" type="SETUP">
+<kw name="Input New Command" library="resource">
+<kw name="Input" library="AppLibrary">
+<arg>new</arg>
+<status status="PASS" starttime="20251116 20:34:59.849" endtime="20251116 20:34:59.849"/>
+</kw>
+<kw name="Run Application" library="AppLibrary">
+<status status="PASS" starttime="20251116 20:34:59.849" endtime="20251116 20:34:59.849"/>
+</kw>
+<status status="PASS" starttime="20251116 20:34:59.849" endtime="20251116 20:34:59.849"/>
+</kw>
+<status status="PASS" starttime="20251116 20:34:59.849" endtime="20251116 20:34:59.849"/>
+</kw>
+<kw name="Create User" library="AppLibrary">
+<arg>kalle!</arg>
+<arg>kalle123</arg>
+<msg timestamp="20251116 20:34:59.850" level="FAIL">AttributeError: 'UserService' object has no attribute '_io'</msg>
+<status status="FAIL" starttime="20251116 20:34:59.850" endtime="20251116 20:34:59.850"/>
+</kw>
+<kw name="Output Should Contain" library="AppLibrary">
+<arg>Käyttäjätunnuksen on oltava merkeistä a-z koostuva.</arg>
+<status status="NOT RUN" starttime="20251116 20:34:59.851" endtime="20251116 20:34:59.851"/>
+</kw>
+<status status="FAIL" starttime="20251116 20:34:59.849" endtime="20251116 20:34:59.851">AttributeError: 'UserService' object has no attribute '_io'</status>
+</test>
+<test id="s1-s2-t4" name="Register With Valid Username And Too Short Password" line="23">
+<kw name="Input New Commando" type="SETUP">
+<kw name="Input New Command" library="resource">
+<kw name="Input" library="AppLibrary">
+<arg>new</arg>
+<status status="PASS" starttime="20251116 20:34:59.852" endtime="20251116 20:34:59.852"/>
+</kw>
+<kw name="Run Application" library="AppLibrary">
+<status status="PASS" starttime="20251116 20:34:59.853" endtime="20251116 20:34:59.853"/>
+</kw>
+<status status="PASS" starttime="20251116 20:34:59.852" endtime="20251116 20:34:59.853"/>
+</kw>
+<status status="PASS" starttime="20251116 20:34:59.852" endtime="20251116 20:34:59.853"/>
+</kw>
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>ka</arg>
+<msg timestamp="20251116 20:34:59.853" level="FAIL">AttributeError: 'UserService' object has no attribute '_io'</msg>
+<status status="FAIL" starttime="20251116 20:34:59.853" endtime="20251116 20:34:59.854"/>
+</kw>
+<kw name="Output Should Contain" library="AppLibrary">
+<arg>Salasanan on oltava pituudeltaan vähintään 8 merkkiä.</arg>
+<status status="NOT RUN" starttime="20251116 20:34:59.854" endtime="20251116 20:34:59.854"/>
+</kw>
+<status status="FAIL" starttime="20251116 20:34:59.852" endtime="20251116 20:34:59.854">AttributeError: 'UserService' object has no attribute '_io'</status>
+</test>
+<test id="s1-s2-t5" name="Register With Valid Username And Long Enough Password Containing Only Letters" line="27">
+<kw name="Input New Commando" type="SETUP">
+<kw name="Input New Command" library="resource">
+<kw name="Input" library="AppLibrary">
+<arg>new</arg>
+<status status="PASS" starttime="20251116 20:34:59.856" endtime="20251116 20:34:59.856"/>
+</kw>
+<kw name="Run Application" library="AppLibrary">
+<status status="PASS" starttime="20251116 20:34:59.856" endtime="20251116 20:34:59.856"/>
+</kw>
+<status status="PASS" starttime="20251116 20:34:59.856" endtime="20251116 20:34:59.856"/>
+</kw>
+<status status="PASS" starttime="20251116 20:34:59.856" endtime="20251116 20:34:59.856"/>
+</kw>
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kallekalle</arg>
+<msg timestamp="20251116 20:34:59.856" level="FAIL">AttributeError: 'UserService' object has no attribute '_io'</msg>
+<status status="FAIL" starttime="20251116 20:34:59.856" endtime="20251116 20:34:59.857"/>
+</kw>
+<kw name="Output Should Contain" library="AppLibrary">
+<arg>Salasanassa on oltava vähintään 1 ei-kirjain merkki.</arg>
+<status status="NOT RUN" starttime="20251116 20:34:59.857" endtime="20251116 20:34:59.857"/>
+</kw>
+<status status="FAIL" starttime="20251116 20:34:59.855" endtime="20251116 20:34:59.857">AttributeError: 'UserService' object has no attribute '_io'</status>
+</test>
+<status status="FAIL" starttime="20251116 20:34:59.838" endtime="20251116 20:34:59.859"/>
 </suite>
-<status status="PASS" starttime="20251116 19:13:12.007" endtime="20251116 19:13:12.048"/>
+<status status="FAIL" starttime="20251116 20:34:59.788" endtime="20251116 20:34:59.860"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="8" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="3" fail="0" skip="0" id="s1-s1" name="Login">Tests.Login</stat>
+<stat pass="0" fail="8" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="Login">Tests.Login</stat>
+<stat pass="0" fail="5" skip="0" id="s1-s2" name="Register">Tests.Register</stat>
 </suite>
 </statistics>
 <errors>
